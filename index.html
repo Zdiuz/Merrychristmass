@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas, Little Girl</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #FFFBF2, #FFDAB9);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #C0392B;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, #C0392B, #E74C3C);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner h2 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .banner p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .banner button {
+            background-color: #2ECC71;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .banner button:hover {
+            background-color: #27AE60;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            animation: fall linear infinite;
+            color: white;
+            font-size: 1.5rem;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+        .carousel {
+            padding: 2rem;
+            background-color: #F9EBEA;
+        }
+        .carousel h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #C0392B;
+        }
+        .carousel-container {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .thumbnail {
+            flex: 0 0 200px;
+            height: 150px;
+            background-color: #E74C3C;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+            background-color: #C0392B;
+        }
+        footer {
+            background-color: #C0392B;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer span {
+            color: #F4D03F;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Merry Christmas 🎄</h1>
+        <nav>
+            <a href="#kenangan">Pesan Natal</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#ucapan">Ucapan</a>
+            <a href="#hadiah">Hadiah</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Selamat Natal, Vibi! 🎁</h2>
+        <p>Semoga Natal ini membawa kebahagiaan, cinta, dan kenangan manis untuk kita.</p>
+        <button>Klik untuk Melihat Hadiah Natal</button>
+
+        <!-- Snowflakes -->
+        <div class="snowflake" style="left: 10%; animation-duration: 8s;">❄️</div>
+        <div class="snowflake" style="left: 25%; animation-duration: 6s;">❄️</div>
+        <div class="snowflake" style="left: 40%; animation-duration: 10s;">❄️</div>
+        <div class="snowflake" style="left: 55%; animation-duration: 7s;">❄️</div>
+        <div class="snowflake" style="left: 70%; animation-duration: 9s;">❄️</div>
+        <div class="snowflake" style="left: 85%; animation-duration: 5s;">❄️</div>
+    </section>
+
+    <!-- Carousel: Pesan Natal -->
+    <section class="carousel" id="kenangan">
+        <h3>Pesan Natal Spesial</h3>
+        <div class="carousel-container">
+            <div class="thumbnail">"Semoga harimu dipenuhi cinta. ❤️"</div>
+            <div class="thumbnail">"Tahun baru penuh harapan. ✨"</div>
+            <div class="thumbnail">"Kebahagiaan selalu menyertaimu. 🌟"</div>
+            <div class="thumbnail">"Doa terbaik untuk kita. 🙏"</div>
+        </div>
+    </section>
+
+    <!-- Carousel: Playlist -->
+    <section class="carousel" id="playlist">
+        <h3>Playlist Natal Kita</h3>
+        <div class="carousel-container">
+            <div class="thumbnail">"Jingle Bells"</div>
+            <div class="thumbnail">"Silent Night"</div>
+            <div class="thumbnail">"All I Want for Christmas"</div>
+            <div class="thumbnail">"Last Christmas"</div>
+        </div>
+    </section>
+
+    <!-- Carousel: Hadiah Virtual -->
+    <section class="carousel" id="hadiah">
+        <h3>Hadiah Virtual</h3>
+        <div class="carousel-container">
+            <div class="thumbnail">Hadiah 1: "Voucher Spa"</div>
+            <div class="thumbnail">Hadiah 2: "Cokelat Premium"</div>
+            <div class="thumbnail">Hadiah 3: "Lilin Aromaterapi"</div>
+            <div class="thumbnail">Hadiah 4: "Surat Cinta"</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        I wish this will make you happy! | Merry Christmas <span>❤️</span>
+    </footer>
+</body>
+</html>

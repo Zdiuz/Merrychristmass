@@ -1,0 +1,40 @@
+/* Additional CSS for Christmas Webpage */
+
+/* Highlight effect on playlist items */
+.thumbnail {
+    cursor: pointer;
+    position: relative;
+}
+.thumbnail:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.thumbnail:hover:after {
+    opacity: 1;
+}
+
+/* Styling the snowflakes */
+.snowflake {
+    position: absolute;
+    top: -50px;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite, sway 2s ease-in-out infinite;
+    color: white;
+}
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
